@@ -1,0 +1,49 @@
+﻿@model LinkShorteningService.IdentityServer.Web.Models.RegisterRequestViewModel
+<div class="login-page">
+    <div class="lead">
+        <h1>Registration</h1>
+        <p>Create your own local account!</p>
+    </div>
+
+    <partial name="_ValidationSummary" />
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Register Local Account</h2>
+                </div>
+
+                <div class="card-body">
+                    <form method="post" asp-controller="Account" asp-action="Register">
+                        <div asp-validation-summary="ModelOnly"></div>
+                        <div>
+                            <label asp-for="Name"></label>
+                            <input class="form-control" placeholder="Username" asp-for="Name" autofocus>
+                            <span asp-validation-for="Name"></span>
+                        </div>
+                        <div>
+                            <label asp-for="Email"></label>
+                            <input class="form-control" placeholder="Email, e.g. user@mail.com" asp-for="Email">
+                            <span asp-validation-for="Email"></span>
+                        </div>
+                        <div>
+                            <label asp-for="Password"></label><br />
+                            <input class="form-control" asp-for="Password" />
+                            <span asp-validation-for="Password"></span>
+                        </div>
+                        <div>
+                            <label asp-for="PasswordConfirm"></label><br />
+                            <input class="form-control" asp-for="PasswordConfirm" />
+                            <span asp-validation-for="PasswordConfirm"></span>
+                        </div>
+                        <br />
+                        <div>
+                            <input class="btn btn-primary" type="submit" value="Register" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

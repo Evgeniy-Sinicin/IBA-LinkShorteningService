@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+    <h3 *ngIf="group === undefined && isLoaded">All Links</h3>
+    <h3 *ngIf="group && isLoaded">{{ group.name }}</h3>
+    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09"
+        aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarsExample09">
+        <ul *ngIf="links && links.length" class="navbar-nav mr-auto">
+            <a class="nav-link">Count of links: {{ links.length }}</a>
+        </ul>
+        <div>
+            <button *ngIf="group" (click)="addLink()" type="button" class="btn btn-warning ml-auto">Create link</button>
+        </div>
+    </div>
+</nav>
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Number of transitions</th>
+            <th scope="col">Url</th>
+            <th scope="col">Short url</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let link of links; let i = index">
+            <th scope="row">{{ i + 1 }}</th>
+            <td>{{ link.name }}</td>
+            <td>{{ link.clickCount }}</td>
+            <td><a (click)="redirect(link.url)" class="link">{{ link.url }}</a></td>
+            <td><a (click)="redirect(getShortUrl(link.id))" class="link">{{ getShortUrl(link.id) }}</a></td>
+        </tr>
+    </tbody>
+</table>
+<ngx-spinner></ngx-spinner>

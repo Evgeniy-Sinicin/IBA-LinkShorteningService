@@ -1,0 +1,15 @@
+button {
+    font-weight: bold;
+}
+
+.link {
+    color: orange;
+    width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+.link:hover {
+    color: gray;
+    cursor: pointer;
+}

@@ -1,0 +1,24 @@
+@using System.Diagnostics
+@using IdentityServer4.Extensions
+
+@{
+    string name = null;
+    if (!true.Equals(ViewData["signed-out"]))
+    {
+        name = Context.User?.GetDisplayName();
+    }
+}
+<div class="welcome-page">
+    <h1>
+        <img src="~/icon.jpg">
+        Welcome to Links Shortening Identity Service
+    </h1>
+    @if (!string.IsNullOrWhiteSpace(name))
+    {
+        <h2>Go to <a href="http://localhost:4200">Link Shortening Service</a></h2>
+    }
+    else
+    {
+        <h2>Go to <a asp-action="Login" asp-controller="Account">Login</a></h2>
+    }
+</div>

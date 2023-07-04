@@ -1,0 +1,41 @@
+<div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+    <div class="card card-signin my-5">
+        <div class="card-body">
+            <h5 class="card-title text-center">Link creation</h5>
+            <!-- <form class="form-signin">
+                <div class="form-label-group">
+                    <label for="inputName">Name</label>
+                    <input formControlName="name" type="text" id="inputName" class="form-control"placeholder="Name" required autofocus />
+                </div>
+                <br />
+                <div class="form-label-group">
+                    <label for="inputUrl">Url</label>
+                    <input formControlName="url" type="text" id="inputUrl" class="form-control"
+                        placeholder="Url" required />
+                </div>
+                <br />
+                <button class="btn btn-warning"
+                    type="submit">Create</button>
+            </form> -->
+            <form *ngIf="!success" #f="ngForm" (ngSubmit)="onSubmit()">
+                <!-- <img class="mb-4" src="assets/images/angular_solidBlack.svg" alt="" width="125" height="125"> -->
+                <h1 class="h3 mb-3 font-weight-normal">Add link</h1>
+                <div class="form-group">
+                    <label for="name" class="sr-only">Name</label>
+                    <input type="text" id="name" name="name" [(ngModel)]="link.name" class="form-control" placeholder="Link name" required autoFocus>
+                </div>
+                <div class="form-group">
+                    <label for="url" class="sr-only">URL</label>
+                    <input type="text" id="url" name="url" [(ngModel)]="link.url" class="form-control" placeholder="Link Url" required autoFocus>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block button-style" type="submit" [disabled]="!f.form.valid">Go</button>
+                <div *ngIf="error" class="alert alert-danger mt-3" role="alert">
+                    <strong>Oops!</strong> {{error}}
+                </div>
+            </form>
+            <br />
+            <!-- <div *ngIf="error" class="alert alert-danger">{{ error }}</div> -->
+        </div>
+    </div>
+</div>
+<ngx-spinner></ngx-spinner>

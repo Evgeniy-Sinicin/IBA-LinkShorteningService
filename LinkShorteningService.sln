@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.74
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkShorteningService", "LinkShorteningService\LinkShorteningService.csproj", "{FEA6009D-9C0D-4DDB-98BE-11C8634DDBDA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkShorteningService.BusinessLogic", "LinkShorteningService.BusinessLogic\LinkShorteningService.BusinessLogic.csproj", "{392C2EAB-7AA4-4027-843B-D1413A84C0EA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkShorteningService.DataAccess", "LinkShorteningService.DataAccess\LinkShorteningService.DataAccess.csproj", "{7D3BFF26-C649-4A0C-9780-E34C09D1C4BB}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "LinkShorteningServiceUI", "LinkShorteningServiceUI\", "{FB0F5644-F3A1-419D-B077-8488DB1C7B4A}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_56058"
+		Debug.AspNetCompiler.PhysicalPath = "LinkShorteningServiceUI\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56058\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_56058"
+		Release.AspNetCompiler.PhysicalPath = "LinkShorteningServiceUI\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56058\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "56058"
+		SlnRelativePath = "LinkShorteningServiceUI\"
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkShorteningService.IdentityServer.DataAccess", "LinkShorteningService.IdentityServer.DataAccess\LinkShorteningService.IdentityServer.DataAccess.csproj", "{192C70B2-5CA4-4DD7-BB8C-3D3F5BF4C968}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkShorteningService.IdentityServer.Web", "LinkShorteningService.IdentityServer.Web\LinkShorteningService.IdentityServer.Web.csproj", "{CFAE94F1-5A3A-4F4E-8F80-8638C36A478B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FEA6009D-9C0D-4DDB-98BE-11C8634DDBDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEA6009D-9C0D-4DDB-98BE-11C8634DDBDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEA6009D-9C0D-4DDB-98BE-11C8634DDBDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEA6009D-9C0D-4DDB-98BE-11C8634DDBDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{392C2EAB-7AA4-4027-843B-D1413A84C0EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{392C2EAB-7AA4-4027-843B-D1413A84C0EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{392C2EAB-7AA4-4027-843B-D1413A84C0EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{392C2EAB-7AA4-4027-843B-D1413A84C0EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D3BFF26-C649-4A0C-9780-E34C09D1C4BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D3BFF26-C649-4A0C-9780-E34C09D1C4BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D3BFF26-C649-4A0C-9780-E34C09D1C4BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D3BFF26-C649-4A0C-9780-E34C09D1C4BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB0F5644-F3A1-419D-B077-8488DB1C7B4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB0F5644-F3A1-419D-B077-8488DB1C7B4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB0F5644-F3A1-419D-B077-8488DB1C7B4A}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB0F5644-F3A1-419D-B077-8488DB1C7B4A}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{192C70B2-5CA4-4DD7-BB8C-3D3F5BF4C968}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{192C70B2-5CA4-4DD7-BB8C-3D3F5BF4C968}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{192C70B2-5CA4-4DD7-BB8C-3D3F5BF4C968}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{192C70B2-5CA4-4DD7-BB8C-3D3F5BF4C968}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFAE94F1-5A3A-4F4E-8F80-8638C36A478B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFAE94F1-5A3A-4F4E-8F80-8638C36A478B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFAE94F1-5A3A-4F4E-8F80-8638C36A478B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFAE94F1-5A3A-4F4E-8F80-8638C36A478B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5316EE81-EBEA-4300-AA8E-A86338FAF82A}
+	EndGlobalSection
+EndGlobal

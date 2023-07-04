@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+    <h3>All Groups</h3>
+    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09"
+        aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarsExample09">
+        <ul class="navbar-nav mr-auto">
+            <a class="nav-link">Count of links: {{ getLinksCount }}</a>
+        </ul>
+        <button (click)="addGroup()" type="button" class="btn btn-warning">Create a group</button>
+    </div>
+</nav>
+<table *ngIf="groups && groups.length" class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Number of transitions</th>
+            <th scope="col">Links</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let group of groups; let i = index">
+            <th scope="row">{{ i + 1 }}</th>
+            <td>{{ group.name }}</td>
+            <td>{{ group.redirectCount }}</td>
+            <td><a (click)="redirect(group.id)" class="link">{{ group.linksCount }} links</a></td>
+        </tr>
+    </tbody>
+</table>
+<ngx-spinner></ngx-spinner>
